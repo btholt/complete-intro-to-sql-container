@@ -18,3 +18,4 @@ RUN apt-get install wget bzip2 -y
 RUN ./download
 
 COPY ./import.sh /docker-entrypoint-initdb.d/import.sh
+COPY ./recipeguru.sql /omdb/recipeguru.sql
